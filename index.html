@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SalchiShop</title>
+</head>
+<body>
+    <h1 class="titulo-rastafari">SalchiShop</h1>
+
+    <header>
+        <div class="carrito">
+            <button id="carrito-btn">Carrito 🛒 (<span id="total-productos">0</span>)</button>
+        </div>
+    </header>
+
+    <section class="welcome-section">
+        <h2 class="welcom">Bienvenido a SalchiShop</h2>
+        <p>Explora lo mejor de nuestros productos inspirados en la cultura rastafari.</p>
+    </section>
+
+    <main id="contenedor-imagen">
+        <div id="productos" class="productos">
+            <div class="card" data-id="1" data-name="Aceite de CBD" data-price="20">
+                <img src="images/cbd.png" alt="Aceite de CBD">
+                <h2>Aceite de CBD</h2>
+                <p>$20</p>
+                <button class="btn-add">Agregar al carrito</button>
+            </div>
+            <div class="card" data-id="2" data-name="Flor de Cáñamo" data-price="15">
+                <img src="images/moño.jpg" alt="Flor de Cáñamo">
+                <h2>Flor de Cáñamo</h2>
+                <p>$15</p>
+                <button class="btn-add">Agregar al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <section id="carrito-contenido" class="hidden">
+        <h2>Carrito de Compras</h2>
+        <div id="items-carrito"></div>
+        <h3>Total: $<span id="total-precio">0</span></h3>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+    </section>
+
+    <footer>
+        <h1>Agregar Nuevo Producto</h1>
+        <input type="text" id="nombre-producto" placeholder="Nombre del producto">
+        <input type="text" id="precio-producto" placeholder="Precio del producto">
+        <input type="file" id="imagen-producto" accept="image/*">
+        <button id="agregar-producto">Agregar Producto</button>
+        <p>© SalchiShop🐱‍🏍</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
