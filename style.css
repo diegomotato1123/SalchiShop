@@ -168,3 +168,37 @@ footer {
 }
 
 
+.benefits-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid #09ff00d3;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.benefits-section h2 {
+    color: #d62d3b;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px #000;
+}
+
+.benefits-section h3 {
+    color: #f9c72b;
+    margin-top: 15px;
+}
+
+.benefits-section p, .benefits-section ul {
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.benefits-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.benefits-section ul li {
+    margin-bottom: 10px;
+}
